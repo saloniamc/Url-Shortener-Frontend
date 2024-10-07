@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.heading{
+    margin-bottom: 12%;
+    height: 60px;
+}
+h1{
+    color: #202020;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Ensure you are using the correct font */
+    font-size: 14px; /* Adjust the font size as per the image */
+    font-weight: 50; /* Normal weight to keep the font light */
+}
+
+h5{
+    font-family: 'Poppins', sans-serif; /* Ensure you are using the correct font */
+    font-size: 14px; /* Adjust the font size as per the image */
+    font-weight: 50; /* Normal weight to keep the font light */
+    color: rgba(124, 156, 191, 1); /* Subtle grayish-blue color */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add some spacing between the heading and this text */
+
+}
+body {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f3f6ff; /*  rgb(182,157,230)*/
+    /*background: linear-gradient(#ab68ca, #de67a3);*/
+    color: rgba(0, 0, 0, 0.8);
+    margin: -20px 0 50px;
+    
+}
+
+p, input, button {
+    font-family: 'Mulish', sans-serif;
+}
+
+p{
+    font-family: 'Mulish', sans-serif; /* Use Mulish as the font */
+    font-size: 14px; /* Small text */
+    font-weight: 450; /* Normal weight */
+    color: #7c9cbf; /* Muted blue color */
+    text-align: center; /* Center the text */
+    margin-top: 15px; /* Space above the link */
+    text-decoration: none; /* Remove underline */
+    display: block;
+}
+
+
+.container {
+    background-color: white; /* Solid white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(214, 225, 251, 0.4), 0 4px 6px rgba(214, 225, 251, 0.3); /* Soft shadow */
+    padding: 40px; /* More padding to match the image */
+    max-width: 450px; /* Adjust width */
+    height: 500px;
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.container:hover {
+    box-shadow: 0 4px 12px rgba(214, 225, 251, 0.6), 0 6px 8px rgba(214, 225, 251, 0.5); /* Darker shadow on hover */
+}
+
+
+.input-group{
+    display: flex; /* Use flexbox to arrange items in a row */
+    align-items: center; /* Center items vertically */
+    background-color: white; /* Set background to white */
+    border: 1.5px solid rgba(236, 240, 250, 0.5);
+    border-radius: 8px; 
+}
+
+input.form-control {
+    padding-right: 60px; /* Space for the "Show" text */
+    padding-left: 40px; /* Space for the icon */
+    width: 100%; /* Full width of the input field */
+    border-radius: 8px;
+    background-color: white;
+    color: #7c9cbf;
+    border: 1.5px solid rgba(236, 240, 250, 0.5);
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    position: relative; /* Ensure input stays in flow */
+    z-index: 1; /* Set input z-index below icon and text */
+    flex: 1;
+}
+
+
+input{
+    border-radius: 2px;
+}
+
+input:hover {
+    border: 2px solid #fff; /* Keep border color on hover */
+}
+
+
+input:focus {
+   box-shadow: none !important; /* Remove any shadow on focus */
+   outline: none !important; /* Ensure no focus outline appears */
+   /* background-color: rgb(239, 230, 255); */
+ }
+
+.input-container {
+   position: relative; /* Ensures that the icon is positioned relative to the container */
+}
+
+.input-icon {
+    margin-right: 10px; /* Space between icon and input */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3789ff;
+    font-size: 14px; /* Ensure icon font size matches input font size */
+    z-index: 2; /* Set higher z-index to appear above input */
+    pointer-events: none; /* Prevent the icon from blocking input clicks */
+}
+
+.input-icon span {
+    display: flex; /* Make span a flex container */
+    align-items: center; /* Center icon vertically */
+}
+
+input::placeholder {
+    font-weight: 300 !important;
+    opacity: 1 !important;
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 14px !important;
+    color: #7c9cbfca !important;
+}
+
+
+/* Vendor prefixes for better browser support */
+input::-webkit-input-placeholder {
+    font-weight: 300;
+    color: #7c9cbf;
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    font-weight: 300;
+    color: #7c9cbf;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    font-weight: 300;
+    color: #7c9cbf;
+    opacity: 1;
+}
+
+input::-ms-input-placeholder {
+    font-weight: 300;
+    color: #7c9cbf;
+    opacity: 1;
+}
+
+.btn {
+    background-color: #3789ff;
+    color: white; /* Change text color for better contrast */
+    border-radius: 7px;
+    margin-top: 4%;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #37afff;
+    color: #a7dcff;
+    border: none;
+}
+
+.form-container {
+    display: none; /* Hide all forms by default */
+  }
+  
+.form-container.active {
+    display: block; /* Show the active form */
+  }
+
+#shortenedUrl {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline by default */
+    transition: text-decoration 0.3s ease; /* Smooth transition for underline effect */
+}
+
+#shortenedUrl:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* To ensure it does not show as a hyperlink */
+#shortenedUrl a {
+    color: white; /* Set anchor color to white */
+    text-decoration: none; /* Remove underline from anchor */
+    transition: transform 0.2s ease; /* Smooth transition for scaling */
+    display: inline-block; /* Allows transform to work correctly */
+}
+
+#shortenedUrl a:hover {
+    transform: scale(1.05); /* Scale the link slightly on hover */
+}
+
+
+/* Styling for the toggle button */
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    color: #7c9cbf;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2; /* Set higher z-index to keep it visible */
+}
