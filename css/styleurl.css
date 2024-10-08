@@ -200,7 +200,7 @@ input::-ms-input-placeholder {
   }
 
 #shortenedUrl {
-    color: white; /* Set text color to white */
+    color: #3789ff; /* Set text color to white */
     text-decoration: none; /* Remove underline by default */
     transition: text-decoration 0.3s ease; /* Smooth transition for underline effect */
 }
