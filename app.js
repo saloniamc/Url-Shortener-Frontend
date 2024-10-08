@@ -1,5 +1,5 @@
 // API endpoint (ensure your backend is running at this address)
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://url-shortener-backend-d430.onrender.com';
 
 // Function to shorten the URL
 document.getElementById('urlForm').addEventListener('submit', async function (e) {
