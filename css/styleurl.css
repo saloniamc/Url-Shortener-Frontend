@@ -68,7 +68,7 @@ p{
     box-shadow: 0 2px 10px rgba(214, 225, 251, 0.4), 0 4px 6px rgba(214, 225, 251, 0.3); /* Soft shadow */
     padding: 40px; /* More padding to match the image */
     max-width: 450px; /* Adjust width */
-    height: 500px;
+    height: 400px;
     transition: box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
