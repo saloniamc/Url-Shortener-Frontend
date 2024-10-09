@@ -211,7 +211,7 @@ input::-ms-input-placeholder {
 
 /* To ensure it does not show as a hyperlink */
 #shortenedUrl a {
-    color: white; /* Set anchor color to white */
+    color: #3789ff; /* Set anchor color to white */
     text-decoration: none; /* Remove underline from anchor */
     transition: transform 0.2s ease; /* Smooth transition for scaling */
     display: inline-block; /* Allows transform to work correctly */
